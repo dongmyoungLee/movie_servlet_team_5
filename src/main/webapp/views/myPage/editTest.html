@@ -1,10 +1,10 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Movie_Team_5</title>
+  <title>EditPage</title>
   <link rel="stylesheet" href="../../style/reset.css">
   <link rel="stylesheet" href="../../style/detail.css">
-  <link rel="stylesheet" href="../../style/login.css">
+  <link rel="stylesheet" href="../../style/edit.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 <body>
@@ -51,39 +51,50 @@
     </div>
   </div>
 </header>
-<div class="loginWrap">
-  <div class="loginBox">
-    <h1>로그인</h1>
-    <h2>Wavve 계정으로 로그인</h2>
 
-    <form class="inputWrap">
-      <div class="inputInnerWrap">
-        <input placeholder="이메일 주소 및 아이디"/>
-        <input type="password" placeholder="비밀번호"/>
+<!--여기서부터 시작-->
+<div class="edit_layout">
+  <div class="info_box">
+
+    <h1>회원 정보 수정 페이지 입니다.</h1>
+    <form>
+      <table class="info_table">
+        <tr>
+          <th>이름</th>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <th>이메일</th>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <th>비밀번호</th>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <th>생년월일</th>
+          <td><input type="text" placeholder="생년월일"></td>
+        </tr>
+        <tr>
+          <th>휴대폰 번호</th>
+          <td><input type="text" placeholder="(선택)안넣어도 됩니다."></td>
+        </tr>
+      </table>
+
+      <div class="btn_box">
+        <button> 취소</button>
+        <input type="submit" value="수정">
       </div>
 
-      <div class="checkBoxArea">
-        <div>
-          <input id="check1" type="checkbox" />
-          <label for="check1">아이디 저장</label>
-        </div>
-        <div>
-          <input id="check2" type="checkbox" />
-          <label for="check2">자동 로그인</label>
-        </div>
-      </div>
-
-      <div class="loginBtnArea">
-        <input type="submit" value="로그인">
-      </div>
-
-      <div class="formBottomMenu">
-        <p>아이디 찾기</p>
-        <p>비밀번호 재설정</p>
-        <p>회원가입</p>
-      </div>
     </form>
+
   </div>
+  <div style="text-align: right">
+    <a id="edit_leave_txt" >회원탈퇴 ></a>
+  </div>
+
 </div>
+
+
 </body>
 </html>

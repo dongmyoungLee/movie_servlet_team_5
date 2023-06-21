@@ -5,7 +5,8 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class JdbcConnection {
-    private final String url = "jdbc:mysql://localhost:3306/test" + "?serverTimezone=Asia/Seoul&characterEncoding=UTF-8";
+
+    private final String url = "jdbc:mysql://localhost:3306/finalmovie" + "?serverTimezone=Asia/Seoul&characterEncoding=UTF-8";
     private final String root = "root";
     private final String password = "1q2w3e4r!!";
 
