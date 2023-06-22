@@ -106,14 +106,19 @@ public class MainDao {
         return shownMoviesList;
     }
 
+    //        받아온 (movieDto)를 가져온다.
     public int insertMainMovie(MovieDto movieDto) {
+
         Connection conn = new JdbcConnection().getJdbc();
+//            데이터베이스 sql쿼리문을 작성하고 값은 나중에 저장하기위해 ?를 지정해둡니다.
 
         String sql = "insert into main_movie(title, release_date, duration, description, rating, genre, director, link, poster_image, text_image, detail_image, detail_text_image) " +
                 "values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
-
+//            try catch문을 통해 쿼리문의 값을 지정하기위해 PreparedStatement를 사용합니다
         try {
             PreparedStatement psmt = conn.prepareStatement(sql);
+//            지정된 ?에 올바른 value값들을 지정(setString, setInt ...)하고 값을
+//            movieDto에 있는 값을 불러와 저장시킵니다.
             psmt.setString(1, movieDto.getTitle());
             psmt.setObject(2, movieDto.getRelease_date());
             psmt.setInt(3, movieDto.getDuration());
@@ -127,6 +132,8 @@ public class MainDao {
             psmt.setString(11, movieDto.getDetail_image());
             psmt.setString(12, movieDto.getDetail_text_image());
 
+//            movieDto의 모든 값들을 저장 한 후 executeUpdate를 통해 데이터베이스로 이동하여 SQL문을 실행한 후
+//            정상적으로 작동이 되었으면 1을 반환하고 비정상적으로 처리가 되면 0을 반환합니다.
             if (psmt.executeUpdate() == 0) {
                 return 1;
             }

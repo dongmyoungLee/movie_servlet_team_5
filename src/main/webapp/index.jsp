@@ -7,6 +7,7 @@
     <title>Movie_Team_5</title>
 </head>
 <body>
+<%--처음에 접속하면 redirect로 인해 /main으로 이동--%>
     <c:redirect url="/main"></c:redirect>
 </body>
 </html>

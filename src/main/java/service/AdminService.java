@@ -14,7 +14,7 @@ public class AdminService {
         return adminService;
     }
 
-
+//        AddMainMovieServlet에서 받아온 (movieDto)를 다시 MainDao에 있는 insertMainMovie로 데이터를 삽입한다.
     public void insertMainMovie(MovieDto movieDto){
         MainDao.getRepository().insertMainMovie(movieDto);
     }
