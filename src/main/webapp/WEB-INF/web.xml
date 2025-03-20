@@ -19,12 +19,30 @@
   </servlet-mapping>
 
   <servlet>
+    <servlet-name>DetailSubServlet</servlet-name>
+    <servlet-class>servlet.DetailSubServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DetailSubServlet</servlet-name>
+    <url-pattern>/detailSub</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
     <servlet-name>LoginServlet</servlet-name>
     <servlet-class>servlet.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
   </servlet-mapping>
 
   <servlet>
@@ -45,4 +63,122 @@
     <url-pattern>/edit</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>MainServlet</servlet-name>
+    <servlet-class>servlet.MainServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MainServlet</servlet-name>
+    <url-pattern>/main</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddMainMovieServlet</servlet-name>
+    <servlet-class>servlet.AddMainMovieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddMainMovieServlet</servlet-name>
+    <url-pattern>/addMovie</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AdminMenuServlet</servlet-name>
+    <servlet-class>servlet.AdminMenuServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminMenuServlet</servlet-name>
+    <url-pattern>/adminMenu</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddActorServlet</servlet-name>
+    <servlet-class>servlet.AddActorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddActorServlet</servlet-name>
+    <url-pattern>/addActor</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ShowMovieListServlet</servlet-name>
+    <servlet-class>servlet.ShowMovieListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowMovieListServlet</servlet-name>
+    <url-pattern>/showMovieList</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ShowActorListServlet</servlet-name>
+    <servlet-class>servlet.ShowActorListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowActorListServlet</servlet-name>
+    <url-pattern>/showActorList</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddSubMovieServlet</servlet-name>
+    <servlet-class>servlet.AddSubMovieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddSubMovieServlet</servlet-name>
+    <url-pattern>/addSubMovie</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AiServlet</servlet-name>
+    <servlet-class>servlet.AiServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AiServlet</servlet-name>
+    <url-pattern>/ai</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AiResultServlet</servlet-name>
+    <servlet-class>servlet.AiResultServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AiResultServlet</servlet-name>
+    <url-pattern>/aiResult</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>FindIdServlet</servlet-name>
+    <servlet-class>servlet.FindIdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindIdServlet</servlet-name>
+    <url-pattern>/findId</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>FindPasswordServlet</servlet-name>
+    <servlet-class>servlet.FindPasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindPasswordServlet</servlet-name>
+    <url-pattern>/findPassword</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SetPasswordServlet</servlet-name>
+    <servlet-class>servlet.SetPasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SetPasswordServlet</servlet-name>
+    <url-pattern>/setPassword</url-pattern>
+  </servlet-mapping>
+
+  
 </web-app>

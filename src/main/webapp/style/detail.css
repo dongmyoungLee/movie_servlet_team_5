@@ -99,6 +99,7 @@ body {
 .video_area_center .icon {
     background-repeat: no-repeat;
     margin-bottom: 20px;
+
 }
 
 .video_area_center .movie_title {
@@ -200,6 +201,11 @@ body {
     gap: 50px;
     margin-bottom: 30px;
     font-weight: 400;
+}
+.right_info_area .flexGap .menu_item{
+    color: #ffffff;
+    font-weight: bold;
+
 }
 
 

@@ -15,10 +15,10 @@ var swiper = new Swiper(".swiper", {
     clickable: true
   },
   slidesPerView: 2,
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false
-  // }
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  }
 });
 
 var swiper2 = new Swiper(".mySwiper", {

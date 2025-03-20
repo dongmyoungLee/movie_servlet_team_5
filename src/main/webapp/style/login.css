@@ -1,103 +1,104 @@
-.loginWrap {
+.loginWrap{
     width: 1240px;
     margin: 80px auto;
 }
-
-.loginBox {
+.loginbox{
     width: 560px;
     margin: 0 auto;
-    background: #252525;
+    background-color: #252525;
     padding-top: 40px;
     padding-bottom: 60px;
 }
-
 .loginBox h1{
     font-size: 32px;
     color:white;
     text-align: center;
     margin-bottom: 25px;
 }
-
 .loginBox .inputWrap {
     padding: 0 40px;
 }
-
-.loginBox .inputWrap .inputInnerWrap {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    margin-bottom: 14px;
-}
-
 .loginBox .inputWrap .checkBoxArea {
     display: flex;
     gap: 10px;
     margin-bottom: 33px;
 }
-
-
 .loginBox h2{
-    color: #a5a5a5;
+    color: #A5A5A5;
     font-size: 18px;
     text-align: center;
     margin-bottom: 20px;
 }
-
 .loginBox .inputWrap .inputInnerWrap {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 14px;
 }
-
+.loginBox .inputWrap .inputInnerWrap2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
 .loginBox .inputWrap .inputInnerWrap input{
     padding: 0 20px;
     border:none;
     outline: none;
     height: 53px;
-    background-color: #2f2f2f;
+    background-color: #2F2F2F;
     border-radius:5px;
     color:#ffffff;
 }
-
 .loginBox .inputWrap .checkBoxArea label {
-    color: #a5a5a5;
+    color: #A5A5A5;
     font-size: 15px;
 }
-
 .loginBox .inputWrap .loginBtnArea {
     margin-bottom: 25px;
 }
-
 .loginBox .inputWrap .loginBtnArea input {
     width: 100%;
     height: 60px;
-    background: #1351f9;
+    background: #1351F9;
     border-radius: 30px;
     font-size: 18px;
     color: #fff;
     border: none;
     cursor: pointer;
 }
-
 .loginBox .inputWrap .formBottomMenu {
     display: flex;
     /*flex 하위메뉴 중 가로중앙정렬옵션*/
     justify-content: center;
 }
-
 .loginBox .inputWrap .formBottomMenu p {
-    color: #a5a5a5;
+    color: #A5A5A5;
     padding: 0 14px;
     cursor: pointer;
-    border-right: 1px solid #a5a5a5;
+    border-right: 1px solid #A5A5A5;
 }
-
 .loginBox .inputWrap .formBottomMenu p:last-child {
     border-right: none;
 }
-
-
-
-
-
+.loginBox_admin{
+    width: 560px;
+    margin: 0 auto;
+    background-color: #252525;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.loginBox_admin .menu_item {
+    border: 1px solid gray;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+.loginBox_admin .menu_item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}

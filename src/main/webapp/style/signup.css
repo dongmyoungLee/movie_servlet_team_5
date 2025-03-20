@@ -1,0 +1,93 @@
+.signupWrap {
+    width: 1240px;
+    margin: 80px auto;
+}
+.signupBox {
+    width: 560px;
+    margin: 0 auto;
+    background: #252525;
+    padding-top: 40px;
+    /*padding-bottom: 60px;*/
+}
+.signupBox .join-hd{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.signupBox .join-hd span{
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 37px;
+}
+.signupBox .join-hd h2 {
+    font-size: 32px;
+    color: #A5A5A5;
+    margin-bottom: 37px;
+    display: inline;
+}
+.signupBox .join-hd aaa {
+    margin-bottom: 19px;
+}
+.inputWrap1 input{
+    margin-bottom: 12px;
+}
+.signupBox .inputWrap1{
+    padding: 0 40px;
+}
+.signupBox .inputWrap1 .inputInnerWrap1 {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 14px;
+}
+.signupBox .inputWrap1 .inputInnerWrap1 input {
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    height: 53px;
+    background-color: #2F2F2F;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+}
+.signupBox .inputWrap1 .checkBoxArea1 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 33px;
+}
+.signupBox .inputWrap1 .checkBoxArea1 label {
+    color: #A5A5A5;
+    font-size: 15px;
+}
+.signupBox .inputWrap1 .signupBtnArea {
+    margin-bottom: 25px;
+}
+.signupBox .inputWrap1 .signupBtnArea input {
+    width: 100%;
+    height: 60px;
+    background: #1351F9;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.signupBox .inputWrap1 .formBottomMenu1 {
+    display: flex;
+    /*flex 하위메뉴 중 가로중앙정렬옵션*/
+    justify-content: center;
+}
+.signupBox .inputWrap1 .inputInnerWrap1 .loginerrortop {
+    font-size: 14px;
+    color: #A5A5A5;
+    /*padding: 0 14px;*/
+    margin-bottom: 15px;
+}
+.signupBox .inputWrap1 .inputInnerWrap1 .loginerrorbottom {
+    font-size: 14px;
+    color: #A5A5A5;
+    /*padding: 0 14px;*/
+    cursor: pointer;
+    padding: 0px 0px;
+}

@@ -13,26 +13,42 @@
     <div class="loginWrap">
         <div class="loginBox">
             <h1>로그인</h1>
-            <h2>Wavve 계정으로 로그인</h2>
+            <h2>Mavve 계정으로 로그인</h2>
 
-            <form class="inputWrap">
-
+            <form class="inputWrap" action="/login" method="post">
                 <div class="inputInnerWrap">
-                    <input placeholder="이메일 주소 또는 아이디" />
-                    <input placeholder="비밀번호" />
+
+                    <input placeholder="이메일 주소 또는 아이디" name="user_id_email" value="${id}"/>
+                    <input placeholder="비밀번호" name="user_pwd" type="password"/>
+
                 </div>
 
                 <div class="checkBoxArea">
 
                     <div>
-                        <input id="check1" type="checkbox" />
-                        <label for="check1" >아이디 저장</label>
+
+
+                        <%
+
+                            Boolean isChecked =(Boolean)session.getAttribute("isChecked");
+
+                            if(isChecked) {
+
+                                %>
+
+                        <input id="check1" type="checkbox" name="isChecked" checked />
+                        <label for="check1" >아이디 저장</label> <%}
+                        else {%>
+                        <input id="check1" type="checkbox" name="isChecked" />
+                        <label for="check1" >아이디 저장</label><%}%>
+
+
                     </div>
 
-                    <div>
-                        <input id="check2" type="checkbox" />
-                        <label for="check2" >자동 로그인</label>
-                    </div>
+<%--                    <div>--%>
+<%--                        <input id="check2" type="checkbox" />--%>
+<%--                        <label for="check2" >자동 로그인</label>--%>
+<%--                    </div>--%>
 
                 </div>
 
@@ -41,11 +57,10 @@
                 </div>
 
                 <div class="formBottomMenu">
-                    <p>아이디 찾기</p>
-                    <p>비밀번호 재설정</p>
-                    <p>회원가입</p>
+                    <p><a href="/findId">아이디 찾기</a></p>
+                    <p><a href="/findPassword">비밀번호 재설정</a></p>
+                    <p><a href="/signup">회원가입</a></p>
                 </div>
-
             </form>
         </div>
     </div>

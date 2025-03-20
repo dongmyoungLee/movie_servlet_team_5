@@ -22,27 +22,27 @@
     <div class="info_box">
 
       <h1>회원 정보 수정 페이지 입니다.</h1>
-      <form>
+      <form method="post" action="/edit">
         <table class="info_table">
           <tr>
             <th>이름</th>
-            <td><input type="text"></td>
+            <td><input name="userName" type="text" value="${userName}"></td>
           </tr>
           <tr>
             <th>이메일</th>
-            <td><input type="text"></td>
+            <td><input name="email" type="text" value="${email}"></td>
           </tr>
           <tr>
             <th>비밀번호</th>
-            <td><input type="text"></td>
+            <td><input name="password" type="password" value="${password}"></td>
           </tr>
           <tr>
             <th>생년월일</th>
-            <td><input type="text" placeholder="생년월일"></td>
+            <td><input name="birthDay" type="text" placeholder="생년월일" value="${birthday}"></td>
           </tr>
           <tr>
             <th>휴대폰 번호</th>
-            <td><input type="text" placeholder="(선택) 안넣어도 됩니다."></td>
+            <td><input name="phoneNumber" type="text" placeholder="(선택) 안넣어도 됩니다." value="${phoneNumber}"></td>
           </tr>
         </table>
 
